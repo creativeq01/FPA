@@ -13,12 +13,14 @@ export interface GlobalContextsProviderProps {
   parallaxProviderWrapperProps?: Partial<
     Omit<React.ComponentProps<typeof ParallaxProviderWrapper>, "children">
   >;
+
   contentStackCredentialsProviderProps?: Partial<
     Omit<
       React.ComponentProps<typeof ContentStackCredentialsProvider>,
       "children"
     >
   >;
+
   cmsCredentialsProviderProps?: Partial<
     Omit<React.ComponentProps<typeof CmsCredentialsProvider>, "children">
   >;

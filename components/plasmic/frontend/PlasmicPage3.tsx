@@ -34,11 +34,18 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Button from "../../Button"; // plasmic-import: yqtmlg7NYqV/component
+
+import { useScreenVariants as useScreenVariants_22Zb8UtchRz3S } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 22ZB8UtchRz3s/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_frontend.module.css"; // plasmic-import: 7iuSa1MtYgfxVkY23CKsNe/projectcss
 import sty from "./PlasmicPage3.module.css"; // plasmic-import: g-GPcOLGQq/css
+
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: HE_27bqwn7H/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Y45Cq3CN4lF/icon
+import ChevronDownIcon from "./icons/PlasmicIcon__ChevronDown"; // plasmic-import: TEw3Y2pgpeE/icon
 
 export type PlasmicPage3__VariantMembers = {};
 
@@ -52,6 +59,8 @@ export const PlasmicPage3__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicPage3__OverridesType = {
   root?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
+  svg?: p.Flex<"svg">;
 };
 
 export interface DefaultPage3Props {}
@@ -69,6 +78,10 @@ function PlasmicPage3__RenderFunc(props: {
   const args = Object.assign({}, defaultPage3__Args, props.args);
   const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants_22Zb8UtchRz3S()
+  });
 
   return (
     <React.Fragment>
@@ -93,20 +106,261 @@ function PlasmicPage3__RenderFunc(props: {
             projectcss.plasmic_mixins,
             sty.root
           )}
-        />
+        >
+          <div className={classNames(projectcss.all, sty.freeBox__pbFTu)}>
+            <div className={classNames(projectcss.all, sty.freeBox__h0T9I)}>
+              <div className={classNames(projectcss.all, sty.freeBox__s0IV8)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__vtIZm)}
+                >
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__tzIdr)}
+                  >
+                    <p.PlasmicImg
+                      data-plasmic-name={"img"}
+                      data-plasmic-override={overrides.img}
+                      alt={""}
+                      className={classNames(sty.img)}
+                      displayHeight={"40px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"none" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"40px" as const}
+                      src={{
+                        src: "/plasmic/frontend/images/image13.svg",
+                        fullWidth: 150,
+                        fullHeight: 150,
+                        aspectRatio: 1
+                      }}
+                    />
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__i4RcM)}
+                    >
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__g9JUz
+                        )}
+                        color={"clear" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___85Ct1
+                          )}
+                        >
+                          {"Services"}
+                        </div>
+                      </Button>
+
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__yTpSw
+                        )}
+                        color={"clear" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__abb9T
+                          )}
+                        >
+                          {"Features"}
+                        </div>
+                      </Button>
+
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button___9Maq
+                        )}
+                        color={"clear" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___9NgO7
+                          )}
+                        >
+                          {"Company"}
+                        </div>
+                      </Button>
+
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button___147U9
+                        )}
+                        color={"clear" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__ze0Rb
+                          )}
+                        >
+                          {"Contact"}
+                        </div>
+                      </Button>
+
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__nnlXs
+                        )}
+                        color={"clear" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__l9QtI
+                          )}
+                        >
+                          {"Log in"}
+                        </div>
+                      </Button>
+
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button___1YUyS
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__usgT
+                          )}
+                        >
+                          {"Sign up"}
+                        </div>
+                      </Button>
+                    </p.Stack>
+
+                    {false ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__zCdMx
+                        )}
+                      >
+                        <button
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.button,
+                            projectcss.__wab_text,
+                            sty.button__mCbgT
+                          )}
+                        >
+                          {"Sign up"}
+                        </button>
+
+                        {true ? (
+                          <Button
+                            className={classNames(
+                              "__wab_instance",
+                              sty.button__cUeve
+                            )}
+                            color={"clear" as const}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___4T0Ac
+                              )}
+                            >
+                              {"Log in"}
+                            </div>
+                          </Button>
+                        ) : null}
+                      </div>
+                    ) : null}
+                  </p.Stack>
+                </p.Stack>
+              </div>
+
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__aAFw)}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__yt7Ac
+                  )}
+                >
+                  {"This fills the screen height."}
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__s03J7
+                  )}
+                >
+                  {"It does so by setting a min-height of 100vh."}
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__vcsv5
+                  )}
+                >
+                  {
+                    "It also has a strip at the top and at the bottom of the screen, for the nav bar and a hint to scroll down."
+                  }
+                </div>
+              </p.Stack>
+
+              <div className={classNames(projectcss.all, sty.freeBox__osqa7)}>
+                <ChevronDownIcon
+                  data-plasmic-name={"svg"}
+                  data-plasmic-override={overrides.svg}
+                  className={classNames(projectcss.all, sty.svg)}
+                  role={"img"}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "img", "svg"],
+  img: ["img"],
+  svg: ["svg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  img: typeof p.PlasmicImg;
+  svg: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -166,6 +420,8 @@ export const PlasmicPage3 = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    img: makeNodeComponent("img"),
+    svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicPage3
     internalVariantProps: PlasmicPage3__VariantProps,
